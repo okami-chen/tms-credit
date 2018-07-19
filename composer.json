@@ -1,0 +1,30 @@
+{
+    "name": "okami-chen/tms-credit",
+    "type": "library",
+    "keywords": ["laravel","php","credit"],
+    "description": "tms-wechat module",
+    "homepage": "https://github.com/okami-chen/tms-credit",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "OkamiChen",
+            "email": "x25125x@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OkamiChen\\TmsCredit\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OkamiChen\\TmsCredit\\CreditServiceProvider"
+            ]
+        }
+    }
+}
