@@ -14,7 +14,7 @@ class CreditServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        __NAMESPACE__.'\Console\Command\ImportCommand',
+        __NAMESPACE__.'\Console\Command\NotifyCommand',
     ];
     
     /**
@@ -43,7 +43,7 @@ class CreditServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //$this->commands($this->commands);
+        $this->commands($this->commands);
     }
     
     protected function registerRoute(){
