@@ -56,7 +56,9 @@ class CreditServiceProvider extends ServiceProvider
 
         Route::group($attributes, function (Router $router) {
             $router->any('/module/credit/secret','SecretController@index')->name('tms.credit.secret');
+            $router->any('/service/credit/search', 'SearchController@card')->name('tms.service.credit.search');
             $router->resource('/module/credit/default', 'CreditController',['as'=>'tms']);
+            $router->resource('/module/credit/bill', 'BillController',['as'=>'tms']);
         });
     }
     
